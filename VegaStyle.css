@@ -15,7 +15,7 @@ body {
 
 .features_title {
   font-size: 35px;
-  color: #4dc5ec;
+  color: #3b99e0;
   text-align: center;
   padding-top: 20px;
 }
@@ -40,7 +40,7 @@ table {
 .features_tableIcon {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  color: rgba(21, 193, 199, 0.562);
+  color: rgba(59, 153, 224);
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;

@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "montserratregular";
+  src: url("../assets/fonts/montserrat-regular-webfont.woff2") format("woff2"),
+    url("../assets/fonts/montserrat-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "montserratbold";
+  src: url("../assets/fonts/montserrat-bold-webfont.woff2") format("woff2"),
+    url("../assets/fonts/montserrat-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "montserratregular";
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  font-size: 17px;
+  font-weight: normal;
+  padding: 12px 20px;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  color: #007bff;
+}

@@ -1,0 +1,141 @@
+.pricing {
+  padding-top: 50px;
+  background-color: whitesmoke;
+  width: 100%;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-right: 10px;
+}
+
+.pricing__title {
+  font-size: 32px;
+  color: #3b99e0;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.pricing__content {
+  text-align: center;
+  font-size: 17px;
+  color: grey;
+  margin-top: -10px;
+  padding-bottom: 15px;
+  line-height: 1.4;
+}
+
+.price-table__wrapper {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+.pricing-table {
+  display: inline-block;
+  background: white;
+  margin: 20px;
+  margin-bottom: 10%;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-weight: normal;
+  padding-bottom: 20px;
+  font-size: 30px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.pricing-table__heading {
+  color: #333;
+  border-color: #ddd;
+  border-top: 2px solid #3b99e0;
+  padding-right: 35px;
+  padding-left: 35px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+}
+
+.pricing-table__list {
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-top: -23px;
+  margin-bottom: -15px;
+  color: #a0a0a0;
+  position: relative;
+}
+
+li {
+  padding: 15px;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.pricing-table__specs {
+  color: black;
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+.pricing-table__price {
+  color: #3b99e0;
+  padding-top: 5px;
+  margin: auto;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.pricing_button {
+  padding: 35px;
+}
+
+.pricing-table_button {
+  background-color: white;
+  color: #007bff;
+  border: 1px solid #007bff;
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 2px;
+}
+
+.pricing-table_button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.selected {
+  z-index: 2;
+  width: 6rem;
+  height: 2rem;
+  font-size: 12px;
+  font-family: "montserratbold";
+  line-height: 25px;
+  text-align: center;
+  color: white;
+  box-shadow: 0px 1px 3px #4dbe3b;
+  background: #4dbe3b;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(45deg);
+  position: absolute;
+  right: -40px;
+  top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2.5em;
+}
+
+@media (max-width: 768px) {
+  .pricing-table {
+    width: 44%;
+  }
+}

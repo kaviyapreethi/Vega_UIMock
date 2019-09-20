@@ -136,6 +136,37 @@ li {
 
 @media (max-width: 768px) {
   .pricing-table {
-    width: 44%;
+    width: 40%;
+    margin-bottom: 1%;
+  }
+  .pricing-table__list {
+    padding-left: 0px;
+    padding-right: 0px;
+    line-height: 1;
+  }
+  .pricing-table__specs {
+    line-height: 1;
+  }
+  .selected {
+    width: 5rem;
+    height: 1rem;
+  }
+  .pricing_button {
+    padding: 25px;
+    padding-bottom: 15px;
+  }
+  .pricing-table__heading {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: -25px;
+  }
+  .pricing-table__price {
+    padding-top: 8px;
+  }
+}
+
+@media (max-width: 414px) {
+  .pricing-table {
+    width: 90%;
   }
 }

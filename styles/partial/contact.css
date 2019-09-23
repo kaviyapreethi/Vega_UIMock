@@ -87,15 +87,13 @@ footer {
   margin-top: 80px;
 }
 
-.footer-right {
+.footer__content {
   display: inline-block;
   vertical-align: top;
   color: #d2d1d1;
-}
-
-.footer-right {
   width: 21%;
 }
+
 .footer__title {
   font-family: "montserratbold";
   color: #ffffff;
@@ -104,7 +102,7 @@ footer {
 }
 
 @media (max-width: 550px) {
-  .footer-right {
+  .footer__content {
     display: block;
     width: 100%;
     margin-bottom: 40px;
@@ -145,7 +143,7 @@ i {
 }
 
 @media (min-width: 1600px) {
-  .footer-right {
+  .footer__content {
     width: 8%;
   }
 }

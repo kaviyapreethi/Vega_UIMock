@@ -1,0 +1,149 @@
+.contact {
+  padding-top: 50px;
+
+  background-color: #f6f6f6;
+  width: 100%;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.contact__title {
+  font-size: 32px;
+  color: #3b99e0;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.contact__content {
+  text-align: center;
+  font-size: 17px;
+  color: grey;
+  margin-top: -10px;
+  padding-bottom: 15px;
+  line-height: 1.4;
+}
+
+.contact__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact__table {
+  border-radius: 0px;
+  width: 40%;
+  background-color: #ffffff;
+  border-top: 2px solid #5ea4f3;
+  padding: 40px;
+  font-weight: normal;
+  padding-bottom: 30px;
+  display: inline-block;
+  margin-bottom: 20px;
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 414px) {
+  .contact__table {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact__table {
+    width: 65%;
+  }
+}
+
+@media (max-width: 1599px) {
+  .contact__table {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .contact__table {
+    width: 22rem;
+  }
+}
+
+footer {
+  position: static;
+  bottom: 0;
+}
+
+@media (max-height: 800px) {
+  footer {
+    position: static;
+  }
+}
+.footer__wrapper {
+  background-color: #2b2f31;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  padding: 65px 0px 43px 22px;
+  margin-top: 80px;
+}
+
+.footer__content {
+  display: inline-block;
+  vertical-align: top;
+  color: #d2d1d1;
+  width: 21%;
+}
+
+.footer__title {
+  font-family: "montserratbold";
+  color: #ffffff;
+  font-size: 18px;
+  padding-left: 7px;
+}
+
+@media (max-width: 550px) {
+  .footer__content {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+li {
+  border: none;
+  text-align: left;
+  padding: 5px;
+  position: relative;
+}
+
+.footer_arrow {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+i {
+  border: solid #3b99e0;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2px;
+  margin-right: 7px;
+}
+
+.footer__copyright {
+  background-color: #222425;
+  color: #d2d1d1;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (min-width: 1600px) {
+  .footer__content {
+    width: 8%;
+  }
+}

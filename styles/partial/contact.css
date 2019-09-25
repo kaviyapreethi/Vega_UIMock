@@ -56,15 +56,15 @@
   }
 }
 
-@media (max-width: 1599px) {
+@media (min-width: 1919px) {
   .contact__table {
-    width: 20rem;
+    width: 25rem;
   }
 }
 
-@media (min-width: 1600px) {
+@media (max-width: 1920px) {
   .contact__table {
-    width: 22rem;
+    width: 25rem;
   }
 }
 
@@ -142,8 +142,13 @@ i {
   padding: 20px;
 }
 
-@media (min-width: 1600px) {
+@media (max-width: 1920px) {
   .footer__content {
-    width: 8%;
+    width: 22%;
+  }
+}
+@media (min-width: 1920px) {
+  .footer__content {
+    width: 18%;
   }
 }

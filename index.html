@@ -7,19 +7,22 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./styles/main.css" />
   <script>
-
-    window.nav = {
-      status: false,
-      menu: function () {
-        if (nav.status) {
-          document.getElementById("menu-box").className = "menuopen";
-          nav.status = false;
-        } else {
-          document.getElementById("menu-box").className = "menu-box";
-          nav.status = true;
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function (event) {
+      if (!event.target.matches('.menubar_menu-button')) {
+        var dropdowns = document.getElementsByClassName("menubar__dropdown");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
         }
       }
     }
+
 
 
   </script>
@@ -27,25 +30,23 @@
 
 <body>
   <header>
-    <div class="inner" id="menuBox">
-
+    <div class="menubar">
+      <div class="Vega">Vega</div>
+      <button onclick="myFunction()" class="menubar_menu-button">&#9776;</button>
       <nav>
-        <p id="menu" onclick="nav.menu()" class="inner_menu">
-          &#9776;</p>
-        <ul class="menu" id="menu-box">
-          <li><a href="#home">HOME</a></li>
+        <ul id="myDropdown" class="menubar__dropdown">
+          <li><a href="#home" class="active">HOME</a></li>
           <li><a href="#features">FEATURES</a></li>
           <li><a href="#pricing">PRICING</a></li>
           <li><a href="#about">ABOUT US</a></li>
           <li><a href="#contact">CONTACT US</a></li>
         </ul>
-
       </nav>
     </div>
   </header>
+
   <div id="home">
     <section class="home">
-
       <div class="home__image ">
         <div class="home__wrapper">
           <div class="home__title ">
@@ -61,8 +62,8 @@
     </section>
   </div>
 
-  <section class="features">
-    <div id="features">
+  <div id="features">
+    <section class="features">
       <p class="features__title">
         Features
         <div class="features__content">Lorem ipsum dolor sit amet, consectetur adipiscing<br />
@@ -138,12 +139,12 @@
           </tr>
         </div>
       </div>
-    </div>
-    </div>
+  </div>
   </section>
+  </div>
 
-  <section class="pricing">
-    <div id="pricing">
+  <div id="pricing">
+    <section class="pricing">
       <p class="pricing__title">
         Pricing Table
         <div class="pricing__content">
@@ -215,11 +216,11 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
-  <section class="about">
-    <div id="about">
+  <div id="about">
+    <section class="about">
       <p class="about__title">
         About Us
         <div class="about__content">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -272,11 +273,11 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
-  <section class="contact">
-    <div id="contact">
+  <div id="contact">
+    <section class="contact">
       <p class="contact__title">
         Contact Us
         <div class="contact__content">
@@ -345,9 +346,9 @@
         </div>
       </footer>
       <div class="footer__copyright"> &#169; 2018 Copyright Text</div>
-    </div>
-  </section>
 
+    </section>
+  </div>
 </body>
 
 </html>

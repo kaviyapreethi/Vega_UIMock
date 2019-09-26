@@ -6,141 +6,126 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./styles/main.css" />
-  <script>
-    function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
-    }
-    window.onclick = function (event) {
-      if (!event.target.matches('.menubar_menu-button')) {
-        var dropdowns = document.getElementsByClassName("menubar__dropdown");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
-      }
-    }
-
-
+  <script src="js/app.js">
 
   </script>
+
 </head>
 
 <body>
-  <header>
-    <div class="menubar">
-      <div class="Vega">Vega</div>
-      <button onclick="myFunction()" class="menubar_menu-button">&#9776;</button>
-      <nav>
-        <ul id="myDropdown" class="menubar__dropdown">
-          <li><a href="#home" class="active">HOME</a></li>
-          <li><a href="#features">FEATURES</a></li>
-          <li><a href="#pricing">PRICING</a></li>
-          <li><a href="#about">ABOUT US</a></li>
-          <li><a href="#contact">CONTACT US</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div id="scroll-container">
+    <header>
+      <div class="menubar">
+        <div class="Vega">Vega</div>
+        <button onclick="myFunction()" class="menubar_menu-button">&#9776;</button>
+        <nav>
+          <ul id="myDropdown" class="menubar__dropdown" onclick="activeFunc()">
+            <li><a href="#home" class="btn">HOME</a></li>
+            <li><a href="#features" class="btn">FEATURES</a></li>
+            <li><a href="#pricing" class="btn">PRICING</a></li>
+            <li><a href="#about" class="btn">ABOUT US</a></li>
+            <li><a href="#contact" class="btn">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <div id="home">
-    <section class="home">
-      <div class="home__image ">
-        <div class="home__wrapper">
-          <div class="home__title ">
-            Lorem ipsum dolor sit amet</div>
-          <div class="home__content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam<br />
-            urna, dignissim nec auctor in, mattis vitae leo
+    <div id="home">
+      <section class="home">
+        <div class="home__image ">
+          <div class="home__wrapper">
+            <div class="home__title ">
+              Lorem ipsum dolor sit amet</div>
+            <div class="home__content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam<br />
+              urna, dignissim nec auctor in, mattis vitae leo
+            </div>
+            <button class="home_button">Learn More</button>
           </div>
-          <button class="home_button">Learn More</button>
+          <img src="./assets/images/image4.jpg">
         </div>
-        <img src="./assets/images/image4.jpg">
-      </div>
+      </section>
+    </div>
+
+    <div id="features">
+      <section class="features">
+        <p class="features__title">
+          Features
+          <div class="features__content">Lorem ipsum dolor sit amet, consectetur adipiscing<br />
+            elit. Nunc quam urna, dignissim nec auctor in,<br />mattis vitae leo.
+          </div>
+        </p>
+        <div class="features__container">
+          <div class="features_tableLeft">
+            <tr>
+              <table>
+                <tr>
+                  <td> <i style="font-size:34px; border: none" class="features_tableIcon">&#xf006;</i></td>
+                  <td style="font-size: 20px; font-weight: bold">Reliability
+                <tr>
+                  <td></td>
+                  <td style="color: grey">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in,
+                    mattis vitae leo.</td>
+                </tr>
+                </td>
+            </tr>
+            </table>
+          </div>
+
+          <div class="features_tableRight">
+            <tr>
+              <table>
+                <tr>
+                  <td> <i style="font-size:34px; border: none" class="features_tableIcon">&#xf040;</i></td>
+                  <td style="font-size: 20px; font-weight: bold">Customizable
+                <tr>
+                  <td></td>
+                  <td style="color: grey">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in,
+                    mattis vitae leo.</td>
+                </tr>
+                </td>
+            </tr>
+            </table>
+          </div>
+
+          <div class="features_tableLeft">
+            <tr>
+              <table>
+                <tr>
+                  <td> <i style="font-size:34px; border: none" class="features_tableIcon">&#xf040;</i></td>
+                  <td style="font-size: 20px; font-weight: bold">Responsive
+                <tr>
+                  <td></td>
+                  <td style="color: grey">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in,
+                    mattis vitae leo.</td>
+                </tr>
+                </td>
+            </tr>
+            </table>
+          </div>
+
+          <div class="features_tableRight">
+            <tr>
+              <table>
+                <tr>
+                  <td> <i style="font-size:34px; border: none" class="features_tableIcon">&#xf021;</i></td>
+                  <td style="font-size: 20px; font-weight: bold">All Browser Compatibility
+                <tr>
+                  <td></td>
+                  <td style="color: grey">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Nunc quam urna, dignisim nec auctor in, mattis vitae leo.</td>
+                </tr>
+                </td>
+            </tr>
+            </table>
+            </tr>
+          </div>
+        </div>
+    </div>
     </section>
-  </div>
-
-  <div id="features">
-    <section class="features">
-      <p class="features__title">
-        Features
-        <div class="features__content">Lorem ipsum dolor sit amet, consectetur adipiscing<br />
-          elit. Nunc quam urna, dignissim nec auctor in,<br />mattis vitae leo.
-        </div>
-      </p>
-      <div class="features__container">
-        <div class="features_tableLeft">
-          <tr>
-            <table>
-              <tr>
-                <td> <i style="font-size:34px; border: none" class="features_tableIcon">&#xf006;</i></td>
-                <td style="font-size: 20px; font-weight: bold">Reliability
-              <tr>
-                <td></td>
-                <td style="color: grey">Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in,
-                  mattis vitae leo.</td>
-              </tr>
-              </td>
-          </tr>
-          </table>
-        </div>
-
-        <div class="features_tableRight">
-          <tr>
-            <table>
-              <tr>
-                <td> <i style="font-size:34px; border: none" class="features_tableIcon">&#xf040;</i></td>
-                <td style="font-size: 20px; font-weight: bold">Customizable
-              <tr>
-                <td></td>
-                <td style="color: grey">Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in,
-                  mattis vitae leo.</td>
-              </tr>
-              </td>
-          </tr>
-          </table>
-        </div>
-
-        <div class="features_tableLeft">
-          <tr>
-            <table>
-              <tr>
-                <td> <i style="font-size:34px; border: none" class="features_tableIcon">&#xf040;</i></td>
-                <td style="font-size: 20px; font-weight: bold">Responsive
-              <tr>
-                <td></td>
-                <td style="color: grey">Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in,
-                  mattis vitae leo.</td>
-              </tr>
-              </td>
-          </tr>
-          </table>
-        </div>
-
-        <div class="features_tableRight">
-          <tr>
-            <table>
-              <tr>
-                <td> <i style="font-size:34px; border: none" class="features_tableIcon">&#xf021;</i></td>
-                <td style="font-size: 20px; font-weight: bold">All Browser Compatibility
-              <tr>
-                <td></td>
-                <td style="color: grey">Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Nunc quam urna, dignisim nec auctor in, mattis vitae leo.</td>
-              </tr>
-              </td>
-          </tr>
-          </table>
-          </tr>
-        </div>
-      </div>
-  </div>
-  </section>
   </div>
 
   <div id="pricing">
@@ -348,6 +333,7 @@
       <div class="footer__copyright"> &#169; 2018 Copyright Text</div>
 
     </section>
+  </div>
   </div>
 </body>
 

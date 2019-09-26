@@ -9,6 +9,18 @@ header {
 .menubar__dropdown:hover {
   color: black;
 }
+.active,
+.btn:hover {
+  background: grey;
+  color: white;
+  padding: 0px 5px;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.menubar__dropdown li a:hover {
+  background: grey;
+}
 
 .Vega {
   float: left;
@@ -102,8 +114,7 @@ nav a {
   }
 
   .menubar__dropdown a {
-    background-color: #f1f1f1;
-    padding: 12px 0px;
+    padding: 12px 2px;
     text-decoration: none;
     display: block;
   }
@@ -118,7 +129,7 @@ nav a {
   color: black;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1921px) {
   header {
     margin-left: auto;
     margin-right: auto;

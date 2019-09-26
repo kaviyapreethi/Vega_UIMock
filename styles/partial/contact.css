@@ -56,7 +56,7 @@
   }
 }
 
-@media (min-width: 1919px) {
+@media (min-width: 1921px) {
   .contact__table {
     width: 25rem;
   }
@@ -82,8 +82,10 @@ footer {
   background-color: #2b2f31;
   box-sizing: border-box;
   width: 100%;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  padding: 65px 0px 43px 22px;
+  padding: 65px 0px 47px 27px;
   margin-top: 80px;
 }
 
@@ -147,8 +149,20 @@ i {
     width: 22%;
   }
 }
-@media (min-width: 1920px) {
+@media (min-width: 1921px) {
   .footer__content {
-    width: 18%;
+    width: 24%;
+  }
+  .footer__wrapper {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .footer__copyright {
+    max-width: 1880px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

@@ -5,7 +5,6 @@
 
 .home__image {
   width: auto;
-  height: 650px;
   text-align: center;
   background-position: center;
   background-repeat: no-repeat;
@@ -35,8 +34,8 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  top: 40%;
   width: 100%;
+  top: 325px;
 }
 
 .home__title {
@@ -74,21 +73,35 @@
   }
 
   .home__title {
-    font-size: 17px;
+    font-size: 24px;
     padding-bottom: 18px;
   }
   .home_button {
-    font-size: 12px;
+    font-size: 17px;
     padding: 5px 11px;
   }
   .home__content {
     padding-bottom: 25px;
-    line-height: 1.4;
-    font-size: 10px;
+    line-height: 1.7;
+    font-size: 17px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
   }
   .home__image {
-    height: auto;
+    height: 530px;
     width: 100%;
+  }
+
+  .home__wrapper {
+    text-align: center;
+    top: 37%;
+    display: block;
+    justify-content: center;
+  }
+
+  .home__image img {
+    max-width: 950px;
   }
 }
 @media (max-width: 460px) {
@@ -96,16 +109,35 @@
     width: auto;
   }
   .home__title {
-    font-size: 12px;
-    padding-bottom: 5px;
+    font-size: 32px;
+    padding-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .home_button {
-    font-size: 10px;
-    padding: 4px 10px;
+    font-size: 20px;
+    padding: 11px 15px;
   }
   .home__content {
-    padding-bottom: 3px;
-    font-size: 10px;
+    padding-bottom: 34px;
+    font-size: 18px;
+    margin-left: 13px;
+    margin-right: 13px;
+  }
+  .home__image img {
+    height: 460px;
+    max-width: 570px;
+  }
+
+  .home__wrapper {
+    top: 28%;
+    margin-top: 0px;
+  }
+  .home__image {
+    height: 490px;
+  }
+  .home__image img {
+    height: 490px;
   }
 }
 @media (min-width: 1921px) {
@@ -118,6 +150,7 @@
     align-content: center;
     justify-content: center;
     max-width: 1920px;
+    max-height: 780px;
   }
   .home__image img {
     width: 1920px;
@@ -141,16 +174,42 @@
     margin-right: auto;
     margin-left: auto;
   }
+
+  .home__content {
+    max-width: 588px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 @media (max-width: 1920px) {
+  .home__image {
+    max-height: 780px;
+  }
+
+  .home__content {
+    padding-bottom: 25px;
+    line-height: 1.7;
+    font-size: 17px;
+    max-width: 588px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
   .home__image img {
-    width: 100%;
+    width: 1920px;
   }
 }
 
-@media (max-width: 1000px) {
-  .home__image {
-    height: auto;
+@media (min-width: 768px) {
+  .home__wrapper {
+    top: 37%;
   }
+}
+
+.home__image img {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }

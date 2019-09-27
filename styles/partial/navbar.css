@@ -159,6 +159,11 @@ nav a {
     margin-left: 18px;
   }
 }
+@media (max-width: 460px) {
+  .Vega {
+    margin-left: -25px;
+  }
+}
 
 @media (max-width: 768px) {
   .menubar {

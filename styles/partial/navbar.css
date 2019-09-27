@@ -67,6 +67,8 @@ nav a {
 
 .menubar_menu-button {
   display: none;
+  background-color: white;
+  border: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -133,12 +135,38 @@ nav a {
     margin-right: auto;
   }
   .menubar {
-    width: 50%;
+    max-width: 1920px;
+    padding: 0px;
+  }
+  .menubar__dropdown {
+    margin-right: 145px;
+  }
+  .Vega {
+    margin-left: 20px;
   }
 }
 
-@media (max-width: 869px) {
+@media (max-width: 1023px) {
   .menubar {
     padding: 0px 90px;
+  }
+}
+@media (max-width: 870px) {
+  .menubar {
+    padding: 0px 0px;
+  }
+  .Vega {
+    margin-left: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menubar {
+    padding: 0px 15px;
+    padding-left: 40px;
+    margin-top: 10px;
+  }
+  header {
+    height: 65px;
   }
 }

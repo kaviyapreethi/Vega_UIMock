@@ -11,15 +11,13 @@ header {
 }
 .active,
 .btn:hover {
-  background: grey;
-  color: white;
   padding: 0px 5px;
   margin-left: -5px;
   margin-right: -5px;
 }
 
 .menubar__dropdown li a:hover {
-  background: grey;
+  background: #eee;
 }
 
 .Vega {

@@ -85,7 +85,7 @@ footer {
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 65px 0px 47px 27px;
+  padding: 62px 0px 50px 42px;
   margin-top: 80px;
 }
 
@@ -109,6 +109,20 @@ footer {
     width: 100%;
     margin-bottom: 40px;
     text-align: center;
+  }
+  .footer__wrapper {
+    display: inline-block;
+    padding: 0px;
+    padding-top: 60px;
+  }
+  .footer__title {
+    text-align: center;
+  }
+  .footer__content ul li {
+    text-align: center;
+  }
+  .footer_arrow {
+    display: none;
   }
 }
 
@@ -144,11 +158,6 @@ i {
   padding: 20px;
 }
 
-@media (max-width: 1920px) {
-  .footer__content {
-    width: 22%;
-  }
-}
 @media (min-width: 1921px) {
   .footer__content {
     width: 24%;

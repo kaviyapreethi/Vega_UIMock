@@ -1,6 +1,5 @@
 .contact {
   padding-top: 50px;
-
   background-color: #f6f6f6;
   width: 100%;
   margin-right: 10px;
@@ -17,6 +16,9 @@
 .contact__content {
   text-align: center;
   font-size: 17px;
+  max-width: 449px;
+  margin-left: auto;
+  margin-right: auto;
   color: grey;
   margin-top: -10px;
   padding-bottom: 15px;
@@ -50,9 +52,12 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .contact__table {
     width: 65%;
+  }
+  .contact {
+    padding-top: 15px;
   }
 }
 
@@ -73,6 +78,11 @@ footer {
   bottom: 0;
 }
 
+@media (min-width: 768px) {
+  .footer__wrapper {
+    margin-top: 40px;
+  }
+}
 @media (max-height: 800px) {
   footer {
     position: static;
@@ -114,6 +124,7 @@ footer {
     display: inline-block;
     padding: 0px;
     padding-top: 60px;
+    margin-top: 30px;
   }
   .footer__title {
     text-align: center;
@@ -136,6 +147,7 @@ li {
   text-align: left;
   padding: 5px;
   position: relative;
+  cursor: pointer;
 }
 
 .footer_arrow {

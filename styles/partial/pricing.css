@@ -3,8 +3,6 @@
   background-color: whitesmoke;
   width: 100%;
   overflow: hidden;
-  margin-right: 10px;
-  margin-right: 10px;
 }
 
 .pricing__title {
@@ -176,7 +174,7 @@ li {
 
 @media (max-width: 414px) {
   .pricing-table {
-    width: 90%;
+    width: 95%;
     margin-bottom: 1%;
   }
 }

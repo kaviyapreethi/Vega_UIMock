@@ -1,0 +1,184 @@
+header {
+  background: white;
+  height: 83px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.active,
+.menubar__dropdown:hover {
+  color: black;
+}
+.active,
+.btn:hover {
+  /*padding: 0px 5px;*/
+}
+
+.menubar__dropdown li a:hover {
+  /*background: #eee;*/
+}
+
+.Vega {
+  float: left;
+  margin-top: 31px;
+  font-size: 24px;
+  margin-left: -18px;
+  color: #333;
+  text-decoration: none;
+}
+.Vega,
+.menubar__dropdown {
+  display: inline-block;
+}
+
+.menubar {
+  margin: 0 auto;
+  padding: 0px 145px;
+  overflow: hidden;
+}
+nav ul {
+  float: right;
+  margin-top: 17px;
+}
+nav ul li {
+  text-align: center;
+  line-height: 40px;
+  margin-left: 45px;
+}
+
+nav ul li a {
+  cursor: pointer;
+  display: block;
+  outline: none;
+  width: 100%;
+  text-decoration: none;
+}
+nav ul li {
+  float: left;
+}
+nav a {
+  color: #7f7f7f;
+  font-size: 12px;
+  font-family: "montserratregular";
+  font-weight: 600;
+}
+
+.menubar_menu-button {
+  display: none;
+  background-color: white;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  .menubar {
+    margin-top: 20px;
+  }
+  .Vega {
+    margin-top: 15px;
+  }
+
+  .menubar_menu-button {
+    display: block;
+    float: right;
+    font-size: 30px;
+  }
+
+  nav a {
+    color: #777;
+  }
+  nav ul li {
+    display: block;
+    float: right;
+    width: 100%;
+    padding: 0px;
+    text-align: left;
+    background: white;
+    text-indent: 20px;
+  }
+  nav ul li {
+    margin-left: 0px;
+  }
+  .menubar__dropdown {
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin-right: -15px;
+    padding-left: 55px;
+    background-color: white;
+    min-width: 160px;
+    margin-top: 13px;
+    z-index: 1;
+  }
+
+  .menubar__dropdown a {
+    padding: 5px 2px;
+    text-decoration: none;
+    display: block;
+    text-indent: 0px;
+  }
+
+  .show {
+    display: block;
+  }
+}
+
+.menubar__dropdown a:hover {
+  background-color: white;
+  color: black;
+}
+
+@media (min-width: 1921px) {
+  header {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menubar {
+    max-width: 1920px;
+    padding: 0px;
+  }
+  .menubar__dropdown {
+    margin-right: 145px;
+  }
+  .Vega {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .menubar {
+    padding: 0px 90px;
+  }
+}
+@media (max-width: 870px) {
+  .menubar {
+    padding: 0px 0px;
+  }
+  .Vega {
+    margin-left: 18px;
+  }
+}
+@media (max-width: 460px) {
+  .Vega {
+    margin-left: -25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menubar {
+    padding: 0px 15px;
+    padding-left: 40px;
+    margin-top: 10px;
+  }
+  header {
+    height: 65px;
+  }
+}
+
+@media (max-width: 460px) {
+  .menubar__dropdown a {
+    text-indent: -45px;
+  }
+}

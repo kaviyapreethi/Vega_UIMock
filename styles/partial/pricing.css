@@ -3,8 +3,6 @@
   background-color: whitesmoke;
   width: 100%;
   overflow: hidden;
-  margin-right: 10px;
-  margin-right: 10px;
 }
 
 .pricing__title {
@@ -16,6 +14,9 @@
 
 .pricing__content {
   text-align: center;
+  max-width: 449px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 17px;
   color: grey;
   margin-top: -10px;
@@ -29,6 +30,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 10%;
 }
 
 ul {
@@ -38,8 +40,9 @@ ul {
 .pricing-table {
   display: inline-block;
   background: white;
-  margin: 20px;
-  margin-bottom: 10%;
+  margin: 13px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2);
 }
@@ -105,6 +108,7 @@ li {
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .pricing-table_button:hover {
@@ -135,9 +139,12 @@ li {
 }
 
 @media (max-width: 768px) {
+  .pricing {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
   .pricing-table {
     width: 40%;
-    margin-bottom: 1%;
   }
   .pricing-table__list {
     padding-left: 0px;
@@ -167,6 +174,7 @@ li {
 
 @media (max-width: 414px) {
   .pricing-table {
-    width: 90%;
+    width: 95%;
+    margin-bottom: 1%;
   }
 }

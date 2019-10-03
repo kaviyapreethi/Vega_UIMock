@@ -1,4 +1,5 @@
 @import "./global.css";
+@import "./partial/navbar.css";
 @import "./partial/home.css";
 @import "./partial/features.css";
 @import "./partial/pricing.css";

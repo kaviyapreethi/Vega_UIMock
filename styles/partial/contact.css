@@ -1,9 +1,7 @@
 .contact {
   padding-top: 50px;
-
   background-color: #f6f6f6;
   width: 100%;
-  margin-right: 10px;
   overflow: hidden;
 }
 
@@ -17,6 +15,9 @@
 .contact__content {
   text-align: center;
   font-size: 17px;
+  max-width: 449px;
+  margin-left: auto;
+  margin-right: auto;
   color: grey;
   margin-top: -10px;
   padding-bottom: 15px;
@@ -50,21 +51,24 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .contact__table {
     width: 65%;
   }
-}
-
-@media (max-width: 1599px) {
-  .contact__table {
-    width: 20rem;
+  .contact {
+    padding-top: 15px;
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1921px) {
   .contact__table {
-    width: 22rem;
+    width: 25rem;
+  }
+}
+
+@media (max-width: 1920px) {
+  .contact__table {
+    width: 25rem;
   }
 }
 
@@ -73,6 +77,11 @@ footer {
   bottom: 0;
 }
 
+@media (min-width: 768px) {
+  .footer__wrapper {
+    margin-top: 40px;
+  }
+}
 @media (max-height: 800px) {
   footer {
     position: static;
@@ -82,8 +91,10 @@ footer {
   background-color: #2b2f31;
   box-sizing: border-box;
   width: 100%;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  padding: 65px 0px 43px 22px;
+  padding: 62px 0px 50px 42px;
   margin-top: 80px;
 }
 
@@ -108,6 +119,21 @@ footer {
     margin-bottom: 40px;
     text-align: center;
   }
+  .footer__wrapper {
+    display: inline-block;
+    padding: 0px;
+    padding-top: 60px;
+    margin-top: 30px;
+  }
+  .footer__title {
+    text-align: center;
+  }
+  .footer__content ul li {
+    text-align: center;
+  }
+  .footer_arrow {
+    display: none;
+  }
 }
 
 ul {
@@ -120,6 +146,7 @@ li {
   text-align: left;
   padding: 5px;
   position: relative;
+  cursor: pointer;
 }
 
 .footer_arrow {
@@ -142,8 +169,20 @@ i {
   padding: 20px;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1921px) {
   .footer__content {
-    width: 8%;
+    width: 24%;
+  }
+  .footer__wrapper {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .footer__copyright {
+    max-width: 1880px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

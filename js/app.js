@@ -1,4 +1,4 @@
-function myFunction() {
+function hangburger() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 window.onclick = function(event) {
@@ -32,55 +32,35 @@ function activeFunc() {
 //on scroll active
 function myFn() {
   {
-    console.log(1);
     var section = document.querySelectorAll(".scrolling");
+    // querySelectorAll returns all the element of .scrolling
     var sections = {};
+    //{}=> object
     var i = 0;
 
     Array.prototype.forEach.call(section, function(e) {
       sections[e.id] = e.offsetTop;
-    });
+    }); // it calls all the element and set it with top index as pixels
 
     window.onscroll = function() {
       var scrollPosition =
         document.documentElement.scrollTop || document.body.scrollTop;
+      // || executes when any one is true or both
+      //The document.documentElement property gives you the html element,
+      //while the document.body property gives you the body element.
 
       for (i in sections) {
         if (sections[i] <= scrollPosition) {
           document.querySelector(".active").setAttribute("class", " ");
+          //querrySelector gets the 1st element that matches .active
+          //it affects class and changes value(name,value). " " => empty string (any value)
           document
             .querySelector("a[href*=" + i + "]")
             .setAttribute("class", "active");
+          //a[href*=#] means the querySelector is looking for all elements containing a #,
+          // and in your case 'a[href*=' + i + ']' is further specifying elements that has the current href of i.
         }
       }
     };
   }
 }
-
-//on scroll active change it
-
-/*function myFn() {
-  var header = document.getElementById("scrollme");
-  var btns = header.getElementsByClassName("scrolling");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("mouseover", function() {
-      var current = document.getElementsByClassName("active");
-      if (current.length > 0) {
-        current[0].className = current[0].className.replace(" active", "");
-      }
-      this.className += " active";
-    });
-  }
-}*/
-
-/*var a = document.getElementById("myDropdown");
-var b = a.getElementsByClassName("btn");
-
-for (var i = 0; i < b.length; i++) {
-  b[i] = document.getElementsByClassName("btn");
-  this.className += " active";
-}
-var a = document.getElementById("myDropdown");
-var b = a.getElementsByClassName("btn");
-for (var i = 0; i < b.length; i++) {
-  b.className += " active";*/

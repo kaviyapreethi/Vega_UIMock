@@ -10,11 +10,11 @@
   </script>
 </head>
 
-<body>
+<body onpageshow="myFn()">
   <header>
     <div class="menubar">
       <div class="Vega">Vega</div>
-      <button onclick="myFunction()" class="menubar_menu-button">&#9776;</button>
+      <button onclick="hangburger()" class="menubar_menu-button">&#9776;</button>
       <nav>
         <ul id="myDropdown" class="menubar__dropdown" onclick="activeFunc()">
           <li><a href="#home" class="btn">HOME</a></li>
@@ -27,7 +27,7 @@
     </div>
   </header>
 
-  <div id="scrollme" onmouseover="myFn()">
+  <div id="scrollme">
     <div id="home" class="scrolling">
       <section class="home">
         <div class="home__image ">
@@ -213,9 +213,9 @@
           <div class="about__table">
             <div class="about__header">
               <img src="./assets/images/avatar1.jpg" alt="John Smith" width="340" height="230">
-              <div class="about_body">
+              <div class="about__body">
                 <p style="font-size: 17px; color:black; margin-bottom: -10px"><strong>John Smith</strong></p>
-                <p style="line-height: 1.5; padding-bottom: 5px; color: gray">Lorem ipsum dolor sit amet,
+                <p style="line-height: 1.5; padding-top: 5px; color: gray">Lorem ipsum dolor sit amet,
                   consectetur<br /> adipiscing elit.
                 </p>
                 <a href="#" onMouseOver="this.style.color='lightblue'" onMouseOut="this.style.color='#18acdc'"
@@ -234,9 +234,9 @@
           <div class="about__table">
             <div class="about__header">
               <img src="./assets/images/avatar2.jpg" alt="Robert Downturn" width="340" height="230">
-              <div class="about_body">
+              <div class="about__body">
                 <p style="font-size: 17px; color:black; margin-bottom: -10px"><strong>Robert Downturn</strong></p>
-                <p style="line-height: 1.5; padding-bottom: 5px; color: gray">Lorem ipsum dolor sit amet,
+                <p style="line-height: 1.5; padding-top: 5px; color: gray">Lorem ipsum dolor sit amet,
                   consectetur<br /> adipiscing elit.
                 </p>
                 <a href="#" onMouseOver="this.style.color='lightblue'" onMouseOut="this.style.color='#18acdc'"
@@ -255,9 +255,9 @@
           <div class="about__table">
             <div class="about__header">
               <img src="./assets/images/avatar3.jpg" alt="Ally Sanders" width="340" height="230">
-              <div class="about_body">
+              <div class="about__body">
                 <p style="font-size: 17px; color:black; margin-bottom: -10px"><strong>Ally Sanders</strong></p>
-                <p style="line-height: 1.5; padding-bottom: 5px; color: gray">Lorem ipsum dolor sit amet,
+                <p style="line-height: 1.5; padding-top: 5px; color: gray">Lorem ipsum dolor sit amet,
                   consectetur<br /> adipiscing elit.
                 </p>
                 <a href="#" onMouseOver="this.style.color='lightblue'" onMouseOut="this.style.color='#18acdc'"

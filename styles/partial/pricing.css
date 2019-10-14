@@ -175,6 +175,6 @@ li {
 @media (max-width: 414px) {
   .pricing-table {
     width: 95%;
-    margin-bottom: 1%;
+    margin-bottom: 1px;
   }
 }

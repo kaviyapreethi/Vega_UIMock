@@ -38,7 +38,7 @@
   border-top: 2px solid #5ea4f3;
   padding: 40px;
   font-weight: normal;
-  padding-bottom: 30px;
+  padding-bottom: 55px;
   display: inline-block;
   margin-bottom: 20px;
   box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2);
@@ -71,6 +71,8 @@
     width: 25rem;
   }
 }
+
+/*footer*/
 
 footer {
   position: static;
@@ -144,7 +146,7 @@ ul {
 li {
   border: none;
   text-align: left;
-  padding: 5px;
+  padding: 4px;
   position: relative;
   cursor: pointer;
 }
@@ -184,5 +186,14 @@ i {
     max-width: 1880px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+.footer__content ul li {
+  line-height: 1.5;
+}
+
+@media (max-width: 995px) {
+  .footer__content ul li a {
+    margin-inline-start: 15px;
   }
 }
